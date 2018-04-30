@@ -5,11 +5,31 @@
 </head>
 <body>
     <p>What is your name?</p>
+    <p>What is your favorite food?</p>
     <script>
+        // gather info from the user via prompt
         var userName = prompt('What is your name?');
+        // log out for us the developer to check
         console.log('user\'s name is', userName);
+        // notice console.log takes multiple arguments
 
+        // parrot back to user what they said:
         alert('Hi ' + userName + ' welcome to my web page!');
+
+        var favoriteFood = prompt('What is your favorite food?');
+        console.log('user\'s favorite food', favoriteFood);
+
+        alert('Hi ' + userName + ', I like ' + favoriteFood + ' too.');
+
+        var likesCats = confirm('You like cats, right?');
+        console.log('user likes cats', likesCats);
+
+        if(likesCats) {
+            alert('Hey ' + userName + ' who likes ' + favoriteFood + '. You like cats, Awesome!');
+        }
+        else {
+            alert('Hey ' + userName + ' maybe cut back on the ' + favoriteFood + ', it might help you like cats.');
+        }
     </script>
 </body>
 </html>
