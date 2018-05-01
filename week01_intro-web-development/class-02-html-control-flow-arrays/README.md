@@ -7,8 +7,9 @@ Html Elements, JS Control Flow and Arrays
 * HTML Elements/Tags
 * Toolkit
 * JS Control Flow
-* Arrays
-
+* CSS Selectors for id and class
+* Small DOM Integration
+ 
 ## Code Review
 
 * Questions and Issues
@@ -28,11 +29,16 @@ Html Elements, JS Control Flow and Arrays
 
 ## Toolkit
 
-* VSCode Settings
+* node?
+* `> npm i -g live-server eslint`, or:
+* `> sudo npm i -g live-server eslint`
+* VSCode Settings:
+    * Extensions: Eslint, code spell checker, live-server
     * linting
     * spell check
-    * autosave
-    * git credentials
+    * auto-save
+* live-server
+* git credentials
 * `<script src="app.js"></script>`
 * Review linting settings
 
@@ -46,9 +52,7 @@ Common structure:
 
 **EXERCISE:** Teach Control Flow
 
-## Arrays
-
-### JS Big Three
+## JS Big Three
 
 Data Structure | Characteristic
 ---|---
@@ -56,7 +60,18 @@ Arrays | List of things in numeric order
 Objects | Key (unique name)/value pairs
 Functions | Run code on demand
 
-### Arrays
+## Simple CSS Selectors
 
-* `0` based indexing (count from 0);
-* Go through in order
+* Use `<link rel="stylesheet" href="css/main.css">`
+* Class and Id Seletors
+    * `.class-name { }`
+    * `#id { }`
+* Key/Value pairs!
+    * `property: value;`
+
+## Interacting with the DOM
+
+* Add `onclick="functionToCall()"` to run on click
+* Use `document.getElementById(id)` to
+    1. Get an element
+    1. Set `node.textContent = ` or `node.nodeValue = `
