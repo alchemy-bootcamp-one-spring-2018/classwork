@@ -1,4 +1,4 @@
-Html Elements, JS Control Flow and Arrays
+Html Elements and JS Control Flow
 ===
 
 ## Agenda
