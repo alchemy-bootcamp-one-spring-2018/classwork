@@ -5,9 +5,9 @@ JS Debugging, HTML Box Model, Arrays
 
 * Code Review, Questions and Issues from Lab
 * Debugging JavaScript
-* HTML Box Model
-* JavaScript Arrays
- 
+* Project Setup
+* Read value from input
+
 ## Code Review
 
 * Questions and Issues
@@ -16,25 +16,30 @@ JS Debugging, HTML Box Model, Arrays
 
 ## Debugging JavaScript
 
-**EXERCISE:** Follow Along
-
 * Chrome Dev Tools
     * Break points
     * Variables
 * Using the console to inspect, change, and run code
 
-## HTML Box Model
+## README.md
 
+What to put in README?
 
-## JavaScript Arrays
+1. Title is usually repo name with hyphens
+1. Brief project description
+1. Developer facing instructions
+    1. Setup
+    1. Architecture or high-level design
 
-* Data Structures
-* Indexed List
-* Versus keyed access (aka a bit about Objects)
-* Operations:
-    * Set an element by index
-    * Get an element by index
-    * Looping
-    * Methods:
-        * push, pop
-        * unshift, shift
+## Read value from input
+
+```js
+var value = document.getElementById('input-id').value;
+```
+
+## JavaScript Objects vs Arrays vs Objects (and Strings)
+
+* Objects as entities
+* Arrays
+* Objects as dictionaries
+* Strings as pseudo-arrays
