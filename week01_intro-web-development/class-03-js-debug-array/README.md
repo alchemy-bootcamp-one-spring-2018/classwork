@@ -1,4 +1,4 @@
-JS Debugging, HTML Box Model, Arrays
+JS Debugging, README
 ===
 
 ## Agenda
