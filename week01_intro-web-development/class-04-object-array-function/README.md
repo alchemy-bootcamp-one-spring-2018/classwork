@@ -40,7 +40,7 @@ A function behaves like a normal object **until** you call it via `()`
 ## CSS Selectors
 
 1. Big Three:
-    1. tag
+    1. tag `p`
     1. class `.`
     1. id `#`
 1. parent child
