@@ -10,6 +10,13 @@ Pairing
     1. current driver pushes code up to their github repo and opens a PR to new drivers fork
     1. new driver merges PR, then pulls that code to their machine
 
+## Setup
+
+1. Both partners fork and clone the assignment repo
+1. Driver starts and when turn is done, pushes to github
+1. Navigator merges the pull request
+1. Navigator does a `git pull` on their local machine
+
 ## Submission
 
 By the end, both forks should be the same. Submit **1** PR (make sure other person is referenced), but two canvas submissions
