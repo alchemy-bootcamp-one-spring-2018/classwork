@@ -14,6 +14,12 @@ Understanding CSS: Thinking inside the box (!!!)
 
 > The key to understanding how CSS works is to imagine that there is an invisible box around every HTML element.
 
+```css
+* {
+   border: 1px solid red !important;
+}
+```
+
 [Example Layouts](https://www.pinterest.com/mitchellhudson/css-layout-challenges/)
 
 ### HTML/CSS Boxes vs JS Trees
@@ -46,8 +52,10 @@ How CSS rules cascade
 
 ### Layout
 
-* `position`
 * `display`
+    * `block`, `inline`, `inline-block`, `none`
+* `position`
+    * `static`, `relative`, `absolute`
 * width, height, overflow
 * Border, margin, & padding
         * "Trouble" aka TRBL = top, right, bottom, left

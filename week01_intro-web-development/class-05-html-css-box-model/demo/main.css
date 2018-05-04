@@ -1,0 +1,53 @@
+p {
+    color: steelblue;
+    // position: relative;
+}
+
+.para {
+    height: 250px;
+    border: 1px solid green;
+    background: lightgreen;
+    box-sizing: border-box;
+    margin-top: 200px;
+    margin: 5px;
+}
+
+.para nav {
+    float: right;
+    width: 20%;
+}
+
+.para div {
+    width: 80%;
+}
+
+header {
+    position: fixed;
+}
+
+.second {
+    top: -10px;
+    left: 50px;
+}
+
+.container {
+    position: relative;
+    height: 300px;
+    background: pink;
+}
+
+.abs {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+section span {
+    display: inline;
+}
+
+span {
+    min-width: 100px;
+    border: 1px solid red;
+    display: none;
+}
