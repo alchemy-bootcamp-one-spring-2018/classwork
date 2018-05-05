@@ -20,7 +20,13 @@
             "ignoreEOLComments": true
         }
       ],
-      "no-trailing-spaces": "warn",
+       "no-trailing-spaces": [
+        "warn",
+        { 
+          "skipBlankLines": true,
+          "ignoreComments": true
+        }
+      ],
       "new-cap": "error",
       "no-redeclare": [
         "error",
