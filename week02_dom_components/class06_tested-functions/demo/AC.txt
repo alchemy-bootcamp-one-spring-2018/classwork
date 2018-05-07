@@ -1,0 +1,8 @@
+US:
+As a User, I need a webapp that I can calculate modulus, so that I know the result.
+
+Acceptance Criteria:
+Given Page Load, I see a prompt for 'Dividend', and 'Divisor'
+^^^^^^^^^^^^^^^, I see a button 'calc'
+Given I click Calc button, I see the Modulus of the Dividend over Divisor
+
