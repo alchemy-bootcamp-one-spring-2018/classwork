@@ -63,13 +63,7 @@ Given I have loaded the Index page, the text "Hello World" will be visible.
 
 ## Resources
 
-* [https://github.com/mawrkus/js-unit-testing-guide]()
-* [https://designmodo.com/test-javascript-unit/]()
-* [https://jrsinclair.com/articles/2016/gentle-introduction-to-javascript-tdd-intro/]()
-
-
-
-
-
-
+* [https://github.com/mawrkus/js-unit-testing-guide](https://github.com/mawrkus/js-unit-testing-guide)
+* [https://designmodo.com/test-javascript-unit/](ttps://designmodo.com/test-javascript-unit/)
+* [https://jrsinclair.com/articles/2016/gentle-introduction-to-javascript-tdd-intro/](https://jrsinclair.com/articles/2016/gentle-introduction-to-javascript-tdd-intro/)
 
