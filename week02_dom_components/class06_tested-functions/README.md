@@ -2,7 +2,7 @@
 
 ## Agenda
 
-* Code review and discussion
+* Code review and discussion!
 * Topic 1
 * Topic 2
 
