@@ -1,5 +1,5 @@
 ## **Week 2: Working with the DOM**
-## Class 6: The DOM, Domain Modeling, and Introduction to Objects
+## Class 7: The DOM, Domain Modeling, and Introduction to Objects
 
 [Schedule](#schedule) | [Announcements](#announcements) | [Objectives](#learning-objectives) | [Notes](#notes) | [Readings](#readings)
 
