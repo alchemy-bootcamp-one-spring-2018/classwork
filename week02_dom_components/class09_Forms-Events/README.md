@@ -9,7 +9,7 @@
 
 **Learning Objectives**
 
-As a result of completing Lecture 8 of Code 201, students will:
+As a result of completing Lecture 9 of Code 201, students will:
 
 * Be able to add an input form to an HTML document with properly structured HTML including the necessary `<form>`, `<input>`, and `<label>` tags, as well as the useful but not necessary `<fieldset>` tag, as measured by successful completion of the daily code assignment and a quiz administered in Canvas.
 * Demonstrate how to use JavaScript events with the .addEventListener() method on a DOM element (specifically, an HTML form), using either a named or anonymous event handler function, as measured by successful completion of the daily code assignment
