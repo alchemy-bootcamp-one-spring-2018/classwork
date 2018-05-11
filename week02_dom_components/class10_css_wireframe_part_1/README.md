@@ -1,28 +1,26 @@
 <a id="top"></a>
 # Today's Plan: Lecture 10
 
-- [Code Review of the weekly project](#codereview) *[75 minutes]*
+- [Code Review of the weekly project](#codereview) 
+	- 	with Standup
+		- Form of a Standup report: Last 24, Next 24, Blockers
 
-- [Layout Demo 1](#layout1) *[60 minutes]*
+- [CSS Lecture - Layout](#readings)
 
-*15-minute break*
+- [Layout Demo 1](#layout1) 
 
-- [Layout Demo 2](#layout2) *[75 minutes]*
+- [Layout Demo 2](#layout2) 
 
 **Learning Objectives**
 
 As a result of completing Lecture 10 of Code 201, students will:
 
 - Have nailed down the functionality of their retail/data/table app, as measured by successful completion of the daily code assignments of the previous three days.
-- Demonstrate understanding of fundamental CSS layout principles including block, inline, normal, relative, absolute, float, and fixed, as measured by successful completion of the daily code assignment and on a quiz administered in Canvas
-- Demonstrate understanding of advanced CSS layout principles including fixed vs. liquid layouts, as well as grid systems, as measured by successful completion of the daily code assignment and on a quiz administered in Canvas
+- Demonstrate understanding of fundamental CSS layout principles including block, inline, normal, relative, absolute, float, and fixed, as measured by successful completion of the daily code assignment.
+- Demonstrate understanding of advanced CSS layout principles including fixed vs. liquid layouts, as well as grid systems, as measured by successful completion of the daily code assignment.
 
-
+<a id="readings"></a>
 ## Readings due today
-
-<a id="layout1"></a>
-## Layout Demo 1
-
 *(Here's a reminder of topics from Chapter 15 on CSS layout)*
 
 - p.361: Key concepts in positioning (block/inline)
@@ -31,17 +29,16 @@ As a result of completing Lecture 10 of Code 201, students will:
 - p.379: Page sizes
 - p.381-6: Fixed & liquid layouts
 - p.387: Layout grids
-- p.391: CSS frameworks - read p.391 only top half - then proceed to explore one of the resources below 
+- p.391: CSS frameworks - read p.391 only top half - then proceed to explore one of the CSS Frameworks below 
 
 [-top-](#top)
 
-<a id="layout2"></a>
-## Layout Demo 2
-
-This will probably be an example of a fixed layout and an example of a grid layout, or maybe just a bunch of basic exercises in layout.
-
-### Resources
+<a id="layout1"></a>
+## Layout Demo 1 - Bootstrap
 * [Bootstrap](https://getbootstrap.com/)
+
+<a id="layout2"></a>
+## Layout Demo 2 - Material Design (MUI)
 * [Material Design](https://www.muicss.com/)
 
 [-top-](#top)
