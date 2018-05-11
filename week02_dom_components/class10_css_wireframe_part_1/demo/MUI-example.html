@@ -4,14 +4,109 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.muicss.com/mui-0.9.39/css/mui.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.muicss.com/mui-0.9.39/js/mui.min.js"></script>
+    <link href="https://cdn.muicss.com/mui-0.9.39/css/mui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-0.9.39/js/mui.js"></script>
+
+    <!-- my custom css file after 3rd party library (ie. MUI)  -->
+    <!--    use to extend or override MUI   -->
+    <link rel="stylesheet" type="text/css" href="MUI-custom.css" />
   </head>
+
   <body>
     <div class="mui-container">
       <h1>MUI Material Design - css framework</h1>
+      <div class="mui-row">
+        <div class="mui-col-md-4">col 1</div>
+        <div class="mui-col-md-4">col 2</div>
+        <div class="mui-col-md-4">col 3</div>
+      </div>
+      <div class="mui-row">
+        <div class="mui-col-md-3">nav</div>
+        <div class="mui-col-md-9">content</div>
+      </div>
+
+      <div class="mui-divider"></div>
+
+      <div class="mui-row">
+        <div id="nav" class="mui-col-md-2">
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>Our Products</li>
+              <li>Learn About Us</li>
+              <li>Contact</li>                
+            </ul>
+          </nav>
+        </div>
+
+        <div id="content" class="mui-col-md-7">
+          content
+        </div>
+        
+        <div id="addSpace" class="mui-col-md-3">
+          add space
+        </div>
+      </div>
+      
+      <div class="mui-divider"></div>
+
+      <div class="mui-row">
+        <form class="mui-form">
+          <legend>Float Label Form</legend>
+          <div class="mui-textfield mui-textfield--float-label">
+            <input type="text">
+            <label>Input 1</label>
+          </div>
+          <div class="mui-textfield mui-textfield--float-label">
+            <input type="text" value="Value on load">
+            <label>Input 2</label>
+          </div>
+          <div class="mui-textfield mui-textfield--float-label">
+            <textarea>Value on load</textarea>
+            <label>Textarea</label>
+          </div>
+          <button type="submit" class="mui-btn mui-btn--raised">Submit</button>
+        </form>
+      </div>
+
+      <div class="mui-divider"></div>
+
+      <div class="mui-row">
+        <form class="mui-form">
+          <legend>Select example</legend>
+
+          <div class="mui-select">
+            <select>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+            </select>
+            <label>Select Example</label>
+          </div>
+
+          <div class="mui-select">
+            <select>
+              <optgroup label="Group 1">
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </optgroup>
+
+              <optgroup label="Group 2">
+                <option>Option 3</option>
+                <option>Option 4</option>
+              </optgroup>
+            </select>
+            <label>Optgroups Example</label>
+          </div>
+
+          <button type="submit" class="mui-btn mui-btn--raised">Submit</button>
+        </form>
+      </div>   
+      <!-- end of row -->
+
     </div>
-    
+    <!-- end of container -->
 
   </body>
 </html>

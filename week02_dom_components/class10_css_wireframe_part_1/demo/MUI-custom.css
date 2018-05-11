@@ -1,0 +1,19 @@
+#nav li {
+  list-style-type: none;
+  text-align: center;
+}
+
+#content {
+  background-color: #EEEEEE;
+  height: 400px;
+}
+
+#addSpace {
+  background-color: #78909B;
+  height: 400px;
+}
+
+/* override MUI on divider */
+.mui-divider {
+  margin: 1.5em 0;
+}
