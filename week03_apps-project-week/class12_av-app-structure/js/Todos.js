@@ -15,6 +15,7 @@ class Todos {
             ul.lastElementChild.remove();
         }
 
+        // loop the data
         for(let i = 0; i < todos.length; i++) {
             // make a child component for each todo
             const todoComponent = new Todo(todos[i], this.onStatusChange);
@@ -30,13 +31,15 @@ class Todos {
         const ul = dom.querySelector('ul');
         this.ul = ul;
 
-        // loop the data
-        for(let i = 0; i < this.todos.length; i++) {
-            // make a child component for each todo
-            const todoComponent = new Todo(this.todos[i], this.onStatusChange);
-            // add the rendered dom of each child component to ul
-            ul.appendChild(todoComponent.render());
-        }
+        this.update(this.todos);
+
+        // Don't repeat ourselves, use the update function!
+        // for(let i = 0; i < this.todos.length; i++) {
+        //     // make a child component for each todo
+        //     const todoComponent = new Todo(this.todos[i], this.onStatusChange);
+        //     // add the rendered dom of each child component to ul
+        //     ul.appendChild(todoComponent.render());
+        // }
 
         return dom;
     }

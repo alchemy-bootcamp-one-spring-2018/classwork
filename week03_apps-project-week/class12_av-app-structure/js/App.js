@@ -1,4 +1,4 @@
-/* globals Todos */
+/* globals Todos, todosData */
 /* exported App */
 
 const appTemplate = document.getElementById('app-template');
@@ -6,13 +6,7 @@ const appTemplate = document.getElementById('app-template');
 class App {
     constructor() {
         // initialization logic
-        this.todos = [{
-            task: 'learn some JavaScript',
-            completed: false
-        }, {
-            task: 'walk the dog',
-            completed: true
-        }];
+        this.todos = todosData;
     }
 
     render() {
