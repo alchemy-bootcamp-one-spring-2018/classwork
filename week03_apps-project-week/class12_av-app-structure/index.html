@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cute TV</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <template id="app-template">
+        <h1>Todos</h1>
+        <section id="add-todo"></section>
+        <section id="todos"></section>
+        <section id="controls"></section>
+    </template>
+
+    <template id="todos-template">
+        <ul></ul>
+    </template>
+
+    <template id="todo-template">
+        <li>
+            <input type="checkbox">
+            <span></span>
+        </li>
+    </template>
+
+    <script src="js/Todo.js"></script>
+    <script src="js/Todos.js"></script>
+    <script src="js/App.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
