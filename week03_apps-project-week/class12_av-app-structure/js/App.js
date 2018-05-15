@@ -69,7 +69,7 @@ class App {
             // onClear
             () => {
                 this.todos = this.todos.filter(todo => !todo.completed);
-                this.updateTodos(); 
+                this.updateTodos();
             }
         );
         controlsSection.appendChild(controlsComponent.render());

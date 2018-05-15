@@ -23,7 +23,7 @@ class Controls {
         for(let i = 0; i < this.filterRadios.length; i++) {
             const radio = this.filterRadios[i];
             if(radio.value === this.filter) radio.checked = true;
-        }      
+        }
     }
 
     render() {
@@ -33,7 +33,7 @@ class Controls {
         this.updateRemaining(this.remaining);
 
         this.filterRadios = dom.querySelectorAll('input[type=radio]');
-        for(let i = 0; i < this.filterRadios.length; i++) {            
+        for(let i = 0; i < this.filterRadios.length; i++) {
             this.filterRadios[i].addEventListener('change', event => {
                 const value = event.target.value;
                 this.onFilter(value);
