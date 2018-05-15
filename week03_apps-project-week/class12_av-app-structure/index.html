@@ -25,6 +25,36 @@
         </li>
     </template>
 
+    <template id="add-todo-template">
+        <form>
+            <input name="task">
+            <button>add</button>
+        </form>
+    </template>
+
+    <template id="controls-template">
+        <section>
+            <span id="remaining"></span>
+            <span>
+                <label>
+                    <input name="filter" type="radio" value="all">
+                    All
+                </label>
+                <label>
+                    <input name="filter" type="radio" value="active">
+                    Active
+                </label>
+                <label>
+                    <input name="filter" type="radio" value="completed">
+                    Completed
+                </label>
+            </span>
+            <button>Clear Completed</button>
+        </section>
+    </template>
+
+    <script src="js/AddTodo.js"></script>
+    <script src="js/Controls.js"></script>
     <script src="js/Todo.js"></script>
     <script src="js/Todos.js"></script>
     <script src="js/todos-data.js"></script>

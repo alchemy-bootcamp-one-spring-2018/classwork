@@ -10,6 +10,8 @@ class Todos {
     }
 
     update(todos) {
+        this.todos = todos;
+
         const ul = this.ul;
         while(ul.lastElementChild) {
             ul.lastElementChild.remove();
