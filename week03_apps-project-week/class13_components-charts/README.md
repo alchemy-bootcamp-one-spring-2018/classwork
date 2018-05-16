@@ -3,6 +3,7 @@ Class 13: Components - Audio/Video
 
 ## Code Review
 
+* Double lab due tomorrow
 * Challenge is real
     * Technology
     * As a developer
@@ -15,6 +16,11 @@ Tuesday | App Structure, Audio & Video | BusMall
 **Wednesday** | Component Review - Charts and Canvas | BusMall Report
 Thursday | Local Storage, CSS Animations and Transitions | BusMall UX
 Friday | Project Prep | Teams
+
+## Daily Agenda
+
+* Components
+* ChartJS
 
 ## Process
 
@@ -59,3 +65,7 @@ What are the points of value from a users and/or business perspective?
     1. If need for both render and update, put in own method
 1. Create `update` methods for data that will need to be updated
     1. Consolidate common render/update logic
+
+## Charts
+
+* ...

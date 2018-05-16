@@ -1,4 +1,4 @@
-/* globals AddTodo, Controls, Todos, todosData */
+/* globals AddTodo, Controls, Todos, todosData, getDisplayTodos */
 /* exported App */
 
 const appTemplate = document.getElementById('app-template');
@@ -15,18 +15,7 @@ class App {
     }
 
     updateTodos() {
-        let displayTodos;
-        switch(this.filter) {
-            case 'all':
-                displayTodos = this.todos;
-                break;
-            case 'completed':
-                displayTodos = this.todos.filter(todo => todo.completed);
-                break;
-            case 'active':
-                displayTodos = this.todos.filter(todo => !todo.completed);
-                break;
-        }
+        const displayTodos = getDisplayTodos(this.todos, this.filter);
         this.todosComponent.update(displayTodos);
     }
 

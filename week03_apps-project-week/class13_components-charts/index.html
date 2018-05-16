@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cute TV</title>
+    <title>Alchemy TV</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div id="root"></div>
 
     <template id="app-template">
-        <h1>App</h1>
-        <section id="section"></section>
+        <h1>Alchemy TV</h1>
+        <section id="video-viewer"></section>
+        <section id="channel-selector"></section>
+        <section id="viewing-report"></section>
+    </template>
+
+    <template id="video-viewer-template">
+        <div class="viewer">
+            <h2></h2>
+            <video controls autoPlay></video>
+        </div>
+    </template>
+
+    <template id="channel-selector-template">
+        <ul></ul>
+    </template>
+
+    <template id="channel-template">
+        <li class="channel">
+            <h3></h3>
+        </li>
+    </template>
+
+    <template id="viewing-report-template">
+        <h2 class="viewing-report-header">Viewing Report</h2>
+        <table class="hidden">
+            <thead>
+                <tr>
+                    <th>Channel</th>
+                    <th>View Count</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </template>
+
+    <template id="channel-report-template">
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
     </template>
     
+    <script src="js/channels.js"></script>
+    <script src="js/ChannelReport.js"></script>
+    <script src="js/ViewingReport.js"></script>
+    <script src="js/Channel.js"></script>
+    <script src="js/ChannelSelector.js"></script>
+    <script src="js/VideoViewer.js"></script>
     <script src="js/App.js"></script>
     <script src="main.js"></script>
 </body>
