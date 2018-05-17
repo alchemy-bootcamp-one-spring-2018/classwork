@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alchemy TV</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <template id="app-template">
+        <h1>Alchemy TV Reports</h1>
+        <section>
+            <a href="index.html">TV Viewer</a>
+            <button>Clear Data</button>
+        </section>
+        <section id="viewing-report"></section>
+        <section id="viewing-chart"></section>
+    </template>
+
+    <template id="viewing-report-template">
+        <h2>Report</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Channel</th>
+                    <th>View Count</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </template>
+
+    <template id="channel-report-template">
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </template>
+
+    <template id="viewing-chart-template">
+        <h2>Chart</h2>
+        <div id="chart-container">
+            <canvas width="400"></canvas>
+        </div>
+    </template>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="js/channels.js"></script>
+    <script src="js/ChannelReport.js"></script>
+    <script src="js/ViewingReport.js"></script>
+    <script src="js/ViewingChart.js"></script>
+    <script src="js/ReportApp.js"></script>
+    <script src="report.js"></script>
+</body>
+</html>

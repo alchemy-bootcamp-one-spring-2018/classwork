@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alchemy TV</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <template id="app-template">
+        <h1>Alchemy TV</h1>
+        <section>
+            <a href="report.html">Viewing Report</a>
+        </section>
+        <section id="video-viewer"></section>
+        <section id="channel-selector"></section>
+    </template>
+
+    <template id="video-viewer-template">
+        <div class="viewer">
+            <h2></h2>
+            <div class="tv">
+                <div class="screen">
+                    <video autoplay></video>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="channel-selector-template">
+        <ul></ul>
+    </template>
+
+    <template id="channel-template">
+        <li class="channel">
+            <h3></h3>
+        </li>
+    </template>
+    
+    <script src="js/channels.js"></script>
+    <script src="js/Channel.js"></script>
+    <script src="js/ChannelSelector.js"></script>
+    <script src="js/VideoViewer.js"></script>
+    <script src="js/ViewerApp.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
