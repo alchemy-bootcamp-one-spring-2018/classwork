@@ -24,7 +24,9 @@ class App {
         const dom = appTemplate.content;
 
         const videoViewerSection = dom.getElementById('video-viewer');
-        const videoViewerComponent = new VideoViewer(this.channels[0]);
+        const firstChannel = this.channels[0];
+        firstChannel.count++;
+        const videoViewerComponent = new VideoViewer(firstChannel);
         const videoDom = videoViewerComponent.render();
         videoViewerSection.appendChild(videoDom);
 
@@ -33,10 +35,10 @@ class App {
             channel.count++;
             videoViewerComponent.update(channel);
 
-            this.totalViews++;
-            if(this.totalViews > 5) {
-                this.showReport();
-            }
+            // this.totalViews++;
+            // if(this.totalViews > 5) {
+            this.showReport();
+            // }
         });
         const channelDom = channelSelectorComponent.render();
         channelSelectorSection.appendChild(channelDom);

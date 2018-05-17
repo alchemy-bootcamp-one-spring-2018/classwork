@@ -1,23 +1,27 @@
 
 .viewer {
-    background: steelblue;
-    padding: 10px;
     width: 650px;
-    text-align: center;
-    margin: auto;
 }
 
 .viewer h2 {
-    color: white;
+    color: steelblue;
+    text-align: center;
+}
+
+.tv {
+    background: steelblue;
+    padding: 20px 10px;
+    width: 100%;
     text-align: center;
 }
 
 .screen {
     width: 600px;
     border: 15px solid black;
-    border-radius: 15%;
+    border-radius: 20%;
     background: black;
     overflow: hidden;
+    margin: auto;
 }
 
 .screen video {
