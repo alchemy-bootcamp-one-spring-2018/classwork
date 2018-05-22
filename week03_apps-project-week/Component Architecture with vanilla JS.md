@@ -48,7 +48,7 @@ render() {
 
 **AND/OR** 
 
-```
+```js
 ================== ToDos.js
 const listTemplate = document.getElementById('list-template'); // get this component's template
 
@@ -74,7 +74,7 @@ render() {
 ## Managing State
 State is the variable space used to store: "those things that change" in the App.  In this architecture, the keyword **this** is used to store State.
 
-```
+```js
 class App {
    constructor() {
       this.products = productData;
@@ -106,7 +106,7 @@ When we analyze the properties of each major node: Customers, Policies, Billing 
 * **Billing** properties are needed just for _Billing_, and therefore will be held in _Billing_
 * **Claims** properties are needed just for _Claims_, and therefore will be held in _Claims_.
 
-```
+```js
 ================== InsuranceApp.js
 class InsuranceApp {
    constructor() {
@@ -165,7 +165,7 @@ So, to answer our 2 questions:
 So, because the InsuranceApp component holds the _state_ that will change, the method (function) will be defined in the InsuranceApp component. And because the Address component is where the interaction will occur, the method is bound (addEventListener) to the ```<form>``` in the Address component.
 
 
-```
+```js
 ===============    InsuranceApp.js
 class InsuranceApp {
    constructor() {
@@ -244,7 +244,7 @@ So, to answer our 2 questions:
 * **Where**? the Approve Button will be displayed as part of the Claim component. Where = Claim component
 * **Who Cares**? the Claim component is the holder of the state that will change. Who Cares = Claim component
 
-```
+```js
 ===============    Claim.js
 const claimTemplate = document.getElementById('claim-template');
 
