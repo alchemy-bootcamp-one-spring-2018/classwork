@@ -23,8 +23,9 @@
 	* generating DOM elements and mounting them to a _target_ 
 	* AND/OR, substantiating child node(s) and mounting them to a _target_
 
-```
-================== ToDos.js
+```js
+/* ToDos.js */
+
 const listTemplate = document.getElementById('list-template'); // get this component's template
 
 ////////////
@@ -49,7 +50,8 @@ render() {
 **AND/OR** 
 
 ```js
-================== ToDos.js
+/* ToDos.js */
+
 const listTemplate = document.getElementById('list-template'); // get this component's template
 
 /////////
@@ -107,27 +109,27 @@ When we analyze the properties of each major node: Customers, Policies, Billing 
 * **Claims** properties are needed just for _Claims_, and therefore will be held in _Claims_.
 
 ```js
-================== InsuranceApp.js
+// InsuranceApp.js
 class InsuranceApp {
    constructor() {
      this.customer = customerData;   // set InsuranceApp state to /*global*/ customerData 
      this.policy = policyData;       // set InsuranceApp state to /*global*/ policyData 
    }
 }
-================== Customer.js
+// Customer.js
 class Customer {
    constructor(customer) {       // receive customer from InsuranceApp (parent)
       this.customer = customer;  // set Customer state to customer received from parent
    }
 }
-================== Policy.js
+// Policy.js
 class Policy {
    constructor(customer, policy) {   // receive customer & policy from InsuranceApp (parent)
       this.customer = customer;      // set Policy state to customer received from parent
       this.policy = policy;          // set Policy state to policy received from parent
    }
 }
-================== Billing.js
+// Billing.js
 class Billing {
    constructor(customer, policy) {    // receive customer & policy from InsuranceApp (parent)
       this.customer = customer;       // set Billing state to customer received from parent
@@ -135,7 +137,7 @@ class Billing {
       this.billing = billingData;     // set Billing state to /*global*/ billingData 
    }
 }
-================== Claim.js
+// Claim.js
 class Claim {
    constructor(customer, policy) { // receive customer & policy from InsuranceApp (parent)
       this.customer = customer;    // set Claim state to customer received from parent
@@ -166,11 +168,12 @@ So, because the InsuranceApp component holds the _state_ that will change, the m
 
 
 ```js
-===============    InsuranceApp.js
+// InsuranceApp.js
+
 class InsuranceApp {
    constructor() {
       this.customer = customerData;   // state that will change on form submit
-      .......
+      //.......
    }
    
    addressUpdate(formData) {         // define the method to execute when the form is submitted
@@ -178,13 +181,17 @@ class InsuranceApp {
    }
    
    render() {
-      ....
-            // pass method down from Grandparent to Parent
+      //....
+      
+      // pass method down from Grandparent to Parent
       const customerComponent = new Customer(this.customer, this.addressUpdate);  
-      ....
+      
+      // ....
    }
 }
-===================  Customer.js
+
+// Customer.js
+
 class Customer {
    constructor(customer, addressUpdate) {
       this.customer = customer;
@@ -192,39 +199,49 @@ class Customer {
    }
    
    render() {
-      ....
-            // pass method down from Parent to Child
+      // ....
+      
+      // pass method down from Parent to Child
       const addressComponent = new Address(this.customer, this.addressUpdate); 
-      ....
+      
+      // ....
    }
 }
-=====================  Address.js
+
+//  Address.js
+
 class Address {
    constructor(customer, addressUpdate) {
       this.customer = customer;
       this.addressUpdate = addressUpdate;  
-          // addressUpdate fn received from parent node
+      // addressUpdate fn received from parent node
       this.address = this.customer.address;
    }
    
    render() {
-      ....
+      // ....
+      
       const form = dom.querySelector('form');
       const address = dom.querySelector('input[name="address"]');
       
       form.addEventListener('submit',(e) => {
-          // anonymous function to handle UI cleanup & call method that processes Business Objective (update address).
+         // anonymous function to handle UI cleanup & call method that processes Business Objective (update address).
          e.preventDefault();
          this.address = address.value;
          this.addressUpdate(this.address);  // call method of InsuranceApp named addressUpdate passing input value from form
          form.reset();
       });
-      ....
+      
+      // ....
+      
       return dom;
    }
 }
-==================== customer.html
-.....
+```
+
+```html
+<!-- customer.html -->
+
 <template id="address-form">
    <form>
       <label>Address:</label>
@@ -245,12 +262,13 @@ So, to answer our 2 questions:
 * **Who Cares**? the Claim component is the holder of the state that will change. Who Cares = Claim component
 
 ```js
-===============    Claim.js
+// Claim.js
+
 const claimTemplate = document.getElementById('claim-template');
 
 class Claim {
-   constructor(customer, policy) {
-   ....
+   constructor() {
+       // ....
        this.claim = claimData;
    }
    
@@ -269,14 +287,17 @@ class Claim {
        return dom;
     }
 }
-===============    claim.html
-....
+```
+
+```html
+<!--  claim.html -->
+
 <template id="claim-template">
-    ...
+    <!-- ... -->
     <button id="approve-button">Approve</button>
-    ...
+    <!-- ... -->
 </template>
-....
+
 ```
 
 
