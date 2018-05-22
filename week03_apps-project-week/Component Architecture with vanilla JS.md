@@ -24,17 +24,17 @@
 	* AND/OR, substantiating child node(s) and mounting them to a _target_
 
 ```js
-/* ToDos.js */
+// ToDos.js
 
 const listTemplate = document.getElementById('list-template'); // get this component's template
 
-////////////
+// ...
 
 render() {
-	  // start this component's dynamic DOM with the contents of the template
+  // start this component's dynamic DOM with the contents of the template
   const dom = listTemplate.content.cloneNode(true); 
   
-      // attach to a location in the template that will be the target of the li created on next lines
+  // attach to a location in the template that will be the target of the li created on next lines
   const targetElement = dom.getElementById('list-target'); 
     
   for(var i = 0; i <= this.items.length; i++) {
@@ -50,17 +50,17 @@ render() {
 **AND/OR** 
 
 ```js
-/* ToDos.js */
+// ToDos.js
 
 const listTemplate = document.getElementById('list-template'); // get this component's template
 
-/////////
+// ...
 
 render() {
-	  // start this component's dynamic DOM with the contents of the template
+  // start this component's dynamic DOM with the contents of the template
   const dom = listTemplate.content.cloneNode(true); 
   
-     // attach to a location in the template that will be the target for the child rendered on next lines for each item
+  // attach to a location in the template that will be the target for the child rendered on next lines for each item
   const targetElement = dom.getElementById('list-target');  
     
   for(var i = 0; i <= this.items.length; i++) {
@@ -116,12 +116,14 @@ class InsuranceApp {
      this.policy = policyData;       // set InsuranceApp state to /*global*/ policyData 
    }
 }
+
 // Customer.js
 class Customer {
    constructor(customer) {       // receive customer from InsuranceApp (parent)
       this.customer = customer;  // set Customer state to customer received from parent
    }
 }
+
 // Policy.js
 class Policy {
    constructor(customer, policy) {   // receive customer & policy from InsuranceApp (parent)
@@ -129,6 +131,7 @@ class Policy {
       this.policy = policy;          // set Policy state to policy received from parent
    }
 }
+
 // Billing.js
 class Billing {
    constructor(customer, policy) {    // receive customer & policy from InsuranceApp (parent)
@@ -137,6 +140,7 @@ class Billing {
       this.billing = billingData;     // set Billing state to /*global*/ billingData 
    }
 }
+
 // Claim.js
 class Claim {
    constructor(customer, policy) { // receive customer & policy from InsuranceApp (parent)
