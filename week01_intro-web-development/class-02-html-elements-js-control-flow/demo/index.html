@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>JavaScript Games</h1>
+
+    <form id="facts-form" 
+          onsubmit="return checkJSAnswers()"
+          onreset="resetJSAnswers()">
+        <div>
+          <label>Who invented JavaScript?</label>
+          <p><input type="text" name="inventor" required></p>
+        </div>
+        <div>
+            <p>Who JavaScript run in the Browser?</p>
+            <p>
+                <label>
+                    <input type="radio" name="runInBrowser" 
+                        value="yes" required> Yes
+                </label>
+                <label>
+                    <input type="radio" name="runInBrowser" 
+                        value="no" required> No
+                </label>
+            </p>
+        </div>
+        <button id="js-submit" type="submit">Check Answers</button>
+        <button id="js-reset" type="reset" disabled>Play Again</button>
+
+        <p id="js-results">
+
+        </p>
+    </form>
+
+    <script src="check-js-answers.js"></script>
+</body>
+</html>
