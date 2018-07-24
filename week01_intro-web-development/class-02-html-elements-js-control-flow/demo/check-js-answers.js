@@ -2,10 +2,10 @@
 
 // Reference all the elements (by id) that we are going
 // to need to use in our functions
-var form = document.getElementById('facts-form');
-var results = document.getElementById('js-results');
-var submit = document.getElementById('js-submit');
-var reset = document.getElementById('js-reset');
+var factForm = document.getElementById('facts-form');
+var factResults = document.getElementById('js-results');
+var factSubmit = document.getElementById('js-submit');
+var factReset = document.getElementById('js-reset');
 
 // function that will run when "submit" event happens on 
 // form (because we put onsubmit="return checkJSAnswers()")
@@ -16,11 +16,11 @@ function checkJSAnswers() {
     // log some details about fact that function is being run
     // add take a look at form output
     console.log('checkJSAnswers called');
-    console.dir(form);
+    console.dir(factForm);
     // form exposes a special "elements" property (just part of how forms
     // work in the browser). This gives us access to all the input controls,
     // so we can get the values out of them.
-    var elements = form.elements;
+    var elements = factForm.elements;
 
     // we can access the value of any input by using it's "value" property
     // a text input has the value in the control that the user typed
@@ -52,11 +52,11 @@ function checkJSAnswers() {
     // PART 3 - Report results to the user
 
     // inner text for freeform text response
-    results.innerText = 'You got ' + correct + ' out of 2 right';
+    factResults.innerText = 'You got ' + correct + ' out of 2 right';
     // disable the submit button (because game is done)
-    submit.disabled = true;
+    factSubmit.disabled = true;
     // enable the reset button (because it is the Play Again button)
-    reset.disabled = false;
+    factReset.disabled = false;
 
     // we need this to keep the form from changing/refreshing the webpage
     return false;
@@ -66,7 +66,7 @@ function checkJSAnswers() {
 // via onreset="resetJSAnswers()"
 function resetJSAnswers() {
     // put everything back to how it was at start of game
-    results.innerText = '';
-    submit.disabled = false;
-    reset.disabled = true;
+    factResults.innerText = '';
+    factSubmit.disabled = false;
+    factReset.disabled = true;
 }

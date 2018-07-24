@@ -32,11 +32,19 @@
         <button id="js-submit" type="submit">Check Answers</button>
         <button id="js-reset" type="reset" disabled>Play Again</button>
 
-        <p id="js-results">
-
-        </p>
+        <p id="js-results"></p>
     </form>
 
+    <form id="guess-form" onsubmit="return checkGuessAnswer()">
+        <p>Guess a number between 1 and 10 (inclusive)</p>
+        <input name="number" require>
+        <button type="submit">Guess</button>
+
+        <p id="guess-results"></p>
+    </form>
+    
+
     <script src="check-js-answers.js"></script>
+    <script src="check-guess-answers.js"></script>
 </body>
 </html>
